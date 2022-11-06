@@ -96,7 +96,10 @@ void loop()
 
 
 
-Output of the simulation :
+# Output of the simulation :
 
 ![output](RO1.png)
 ![output](RO2.png)
+
+# RESULT :
+Thus the digital input sensor is interfaced and activated using Adreno Push Button .
