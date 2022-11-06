@@ -35,7 +35,7 @@ FIGURE-01
 
 
 FIGURE-02
-PROCEDURE 
+# PROCEDURE 
  Open tinker cad account 
 1.	Select Arduino uno , bread board , digital input and digital output 
 2.	Connect the circuit as given in the figure 
@@ -46,11 +46,7 @@ PROCEDURE
 
 
 
-
-
-
-
-CIRCUIT DIAGRAM 
+# CIRCUIT DIAGRAM :
 
 
 
@@ -65,10 +61,35 @@ FIGURE -03
 
 
 
+ 
+ # Program :
+Developed by :VISMAYA.S , 212221230125
+```
+int ledpin=7;
+int pushpin=2;
+int val=0;
+void setup()
+{
+  pinMode(ledpin, OUTPUT);
+  pinMode(pushpin,INPUT);
+}
 
-PROGRAM 
- 
- 
+void loop()
+{
+  val =digitalRead(pushpin);
+  if(val==0)
+  {
+    digitalWrite(ledpin,HIGH);
+  }
+  else
+  {
+    digitalWrite(ledpin,LOW);
+  }
+    
+}
+
+```
+
  
  
  
@@ -77,5 +98,5 @@ PROGRAM
 
 Output of the simulation :
 
-[My image](username.github.com/repository/img/image.jpg)
-
+![output](RO1.png)
+![output](RO2.png)
